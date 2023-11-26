@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Jacques+Francois&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alata', sans-serif;
+}
+
+h1, h4 {
+    font-family: 'Jacques Francois', serif;
+    margin: 5px 0;
+}
+
+main {
+    overflow: auto;
+}
+
+#flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flex-left, #flex-right {
+    width: 25%;
+}
+
+#flex-center {
+    width: 50%;
+}
+
+.left-box {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cream {
+    background-color: #FFFBE7;
+}
+
+.milo {
+    background-color: #E9E1D8;
+}
+
+.choco {
+    background-color: #C5BBAD;
+}
+
+.mini-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card {
+    width: 100px;
+    box-shadow: 0 2px 4px 0 #7a7473;
+    border-radius: 5px;
+    font-size: smaller;
+    line-height: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.card-button {
+    width: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    margin: 2px;
+    position: absolute;
+    right: 0;
+	list-style-type: none;
+}
+
+.mini {
+    font-size: 10px;
+}
+
+.center-box {
+    width: 450px;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+}
+
+.right-box {
+    width: 300px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    width: 250px;
+    background-color: #FFFBE7;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px 5px 15px;
+}
+
+input::placeholder {
+    font-family: 'Jacques Francois', serif;
+    font-size: medium;
+    color:#C5BBAD;
+}
+
+#search-button {
+    width: 35px;
+    height: auto;
+    background-color: #F2BDC8;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#add-button {
+    width: 50px;
+    height: auto;
+    border: none;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: #A3B8DF;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+}
+
+.add {
+    position: relative;
+}
+
+#isComplete {
+    position: absolute;
+    bottom: 10px;
+    left: -30px;
+}
+
+/* #check-button {
+    width: 25px;
+    height: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #AF9AD1;
+} */

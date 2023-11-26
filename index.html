@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8", name="viewport", content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel= "stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1 style="margin: 5px;">Bookshelf</h1>
+                <h3 style="margin: 5px;">Books are important for the mind, heart, and soul</h3>
+            </header>
+            <div id="flex-box">
+                <div id="flex-left">
+                    <section class="cream left-box" style="margin-top: 20px;">
+                        <h4>Uncompleted</h4>
+                        <div class="mini-flex">
+                            <div class="choco card">
+                                <ul>
+                                    <li><button class="cream card-button"><i class="mini choco material-icons">check</i></button></li>
+                                    <li><button class="cream card-button"><i class="mini choco material-icons">delete</i></button></li>
+                                </ul>
+                                <p>Title</p>
+                                <p>Author</p>
+                                <p>Year</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="choco left-box" style="margin-top: 20px;">
+                        <h4>Completed</h4>
+                        <div class="mini-flex">
+                            <div class="cream card">
+                                <ul>
+                                    <li><button class="choco card-button"><i class="mini cream material-icons">undo</i></button></li>
+                                    <li><button class="choco card-button"><i class="mini cream material-icons">delete</i></button></li>
+                                </ul>
+                                <p>Title</p>
+                                <p>Author</p>
+                                <p>Year</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="flex-center">
+                    <section class="milo center-box">
+                        <img src="assets/flower book.jpg" alt="book with flower" style="width: 100%;  border-radius: 25px 25px 0 0;">
+                        <p style="margin: 0 10px;">Your mind is a garden and books are the seed, so pick your favorite and bloom as you read</p>
+                    </section>
+                </div>
+                <div id="flex-right">
+                    <section>
+                        <form action="">
+                            <input type="text" name="search-bar" placeholder="Search book">
+                            <button id="search-button"><i class="material-icons" style="font-size: 20px; color: #ffffff;">search</i></button>
+                        </form>
+                        <div class="choco search right-box" style="margin: 20px 0;">
+                            <div class="mini-flex">
+                                <div class="cream card">
+                                    <p>Title</p>
+                                    <p>Author</p>
+                                    <p>Year</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="milo add right-box">
+                            <h4>Add book</h4>
+                            <form action="" id="inputForm">
+                                <div>
+                                    <label for="addTitle">Title</label>
+                                    <input id="addTitle" type="text" required>
+                                </div>
+                                <div>   
+                                    <label for="addAuthor">Author</label>
+                                    <input id="addAuthor" type="text" required>
+                                </div>
+                                <div>
+                                    <label for="addYear">Year</label>
+                                    <input id="addYear" type="number" required>
+                                </div>
+                                <div>
+                                    <!-- <button id="check-button"><span id="checkmark" hidden><i class="material-icons" style="font-size: 15px; color: #ffffff;">check</i></span></button> -->
+                                    <label for="isComplete">Complete</label>
+                                    <input id="isComplete" type="checkbox">
+                                </div>
+                                <button id="add-button" type="submit"><i class="material-icons" style="font-size: 30px; color: #ffffff;">add</i></button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
