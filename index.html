@@ -14,33 +14,13 @@
             </header>
             <div id="flex-box">
                 <div id="flex-left">
-                    <section class="cream left-box" style="margin-top: 20px;">
+                    <section class="cream left-box">
                         <h4>Uncompleted</h4>
-                        <div class="mini-flex">
-                            <div class="choco card">
-                                <ul>
-                                    <li><button class="cream card-button"><i class="mini choco material-icons">check</i></button></li>
-                                    <li><button class="cream card-button"><i class="mini choco material-icons">delete</i></button></li>
-                                </ul>
-                                <p>Title</p>
-                                <p>Author</p>
-                                <p>Year</p>
-                            </div>
-                        </div>
+                        <div id="uncompleted-books" class="mini-flex"></div>
                     </section>
-                    <section class="choco left-box" style="margin-top: 20px;">
+                    <section class="choco left-box" style="margin-top: 30px;">
                         <h4>Completed</h4>
-                        <div class="mini-flex">
-                            <div class="cream card">
-                                <ul>
-                                    <li><button class="choco card-button"><i class="mini cream material-icons">undo</i></button></li>
-                                    <li><button class="choco card-button"><i class="mini cream material-icons">delete</i></button></li>
-                                </ul>
-                                <p>Title</p>
-                                <p>Author</p>
-                                <p>Year</p>
-                            </div>
-                        </div>
+                        <div id="completed-books" class="mini-flex"></div>
                     </section>
                 </div>
                 <div id="flex-center">
@@ -51,22 +31,13 @@
                 </div>
                 <div id="flex-right">
                     <section>
-                        <form action="">
-                            <input type="text" name="search-bar" placeholder="Search book">
-                            <button id="search-button"><i class="material-icons" style="font-size: 20px; color: #ffffff;">search</i></button>
+                        <form action="" id="searchForm">
+                            <input id="searchTitle" type="text" name="search-bar" placeholder="Search book">
+                            <button id="search-button" type="submit"><i class="material-icons" style="font-size: 20px; color: #ffffff;">search</i></button>
                         </form>
-                        <div class="choco search right-box" style="margin: 20px 0;">
-                            <div class="mini-flex">
-                                <div class="cream card">
-                                    <p>Title</p>
-                                    <p>Author</p>
-                                    <p>Year</p>
-                                </div>
-                            </div>
-                        </div>
                     </section>
                     <section>
-                        <div class="milo add right-box">
+                        <div class="milo add right-box" style="margin-top: 50px;">
                             <h4>Add book</h4>
                             <form action="" id="inputForm">
                                 <div>
@@ -82,9 +53,8 @@
                                     <input id="addYear" type="number" required>
                                 </div>
                                 <div>
-                                    <!-- <button id="check-button"><span id="checkmark" hidden><i class="material-icons" style="font-size: 15px; color: #ffffff;">check</i></span></button> -->
-                                    <label for="isComplete">Complete</label>
-                                    <input id="isComplete" type="checkbox">
+                                    <label for="complete">Complete</label>
+                                    <input id="complete" type="checkbox">
                                 </div>
                                 <button id="add-button" type="submit"><i class="material-icons" style="font-size: 30px; color: #ffffff;">add</i></button>
                             </form>

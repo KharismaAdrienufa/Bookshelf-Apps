@@ -14,6 +14,10 @@ h1, h4 {
     margin: 5px 0;
 }
 
+h3 {
+    font-size: small;
+}
+
 main {
     overflow: auto;
 }
@@ -35,7 +39,7 @@ main {
 
 .left-box {
     width: 250px;
-    height: auto;
+    height: 150px;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -56,17 +60,30 @@ main {
 .mini-flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    overflow-x: auto
 }
 
 .card {
     width: 100px;
     box-shadow: 0 2px 4px 0 #7a7473;
     border-radius: 5px;
-    font-size: smaller;
+    font-size: x-small;
     line-height: 5px;
     padding: 5px;
     position: relative;
+    margin: 0 5px;
+    flex: 0 0 auto;
+    overflow: auto;
+}
+
+.cream-button {
+    color: #FFFBE7;
+}
+
+.choco-button {
+    color: #C5BBAD;
 }
 
 .card-button {
@@ -81,8 +98,8 @@ li {
 
 ul {
     margin: 2px;
-    position: absolute;
-    right: 0;
+    position: relative;
+    right: -5px;
 	list-style-type: none;
 }
 
@@ -145,17 +162,8 @@ input::placeholder {
     position: relative;
 }
 
-#isComplete {
+#complete {
     position: absolute;
     bottom: 10px;
     left: -30px;
 }
-
-/* #check-button {
-    width: 25px;
-    height: 20px;
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #AF9AD1;
-} */
